@@ -1,0 +1,117 @@
+
+html, body{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color:white;
+}
+body{
+    overflow-x: auto;
+    margin:0;
+    padding-top: 30px;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+p{
+    font-size: 1.3em;
+    padding: 20px 0px;
+}
+section{
+    height: 500px;
+}
+section .content{
+    margin:auto;
+    max-width: 1410px;
+}
+.left{
+    width:550px;
+    float: left;
+}
+.content .right{
+    position: relative;
+    width:700px;
+    margin-left:550px;
+}
+.slideshow img {
+    margin: auto;
+    object-fit: contain; 
+    width: 100%; 
+    height: 100%; 
+}
+.slideshow {
+    width: 480px; 
+    height: 261px; 
+    background-color: #e5e5e5;
+    border: 3px solid gray;
+    border-radius: 3px;
+}
+footer{
+    background-color: #101111;
+    height: 100px;
+}
+footer div p{
+    color: #aaaaaa;
+    padding-top: 35px;
+    text-align: center;
+    font-size: 1em;
+}
+@media only screen and (max-width: 1024px){
+    section {
+        height: 900px;
+    }
+    section .content{
+        margin: auto;
+        padding: 0px px;
+    }
+    .left{
+        width:100%;
+        height:500px;
+        float: none;
+    }
+    .slideshow img {
+        margin: auto;
+        object-fit: contain; 
+        width: 100%; 
+        height: 100%; 
+    }
+    .slideshow {
+        margin: auto;
+        width: 90%; 
+        height: 498px; 
+        background-color: #e5e5e5;
+        border: 3px solid gray;
+        border-radius: 3px;
+    }
+    .content .right{
+        margin: auto;
+        width:100%;
+        margin-left: 0px;
+        padding: 40px 60px;
+    }
+    .content .right h2{
+        text-align: center;
+    }
+    
+}
+@media only screen and (max-width:812px){
+    .slideshow {
+        height: 378px;
+        background-color: white;
+        border: 0px  
+    }
+} 
+@media only screen and (max-width:411px) and (orientation:portrait) {
+    section{
+        height:700px;
+    }
+    .left{
+        width:100%;
+        height:200px;
+        float: none;
+    }
+    .content .right{
+        margin: auto;
+        width: 90%;
+        padding: 20px 0px;
+    }
+}

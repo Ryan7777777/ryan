@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ryan Leung</title>
+        <link rel="stylesheet" type="text/css" href="project.css"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+    </head>
+    <body>
+        <section class='api'>
+        <div class='content'>
+            <div class='left'>
+                <div id='apislideshow' class='slideshow'>
+                    <div>
+                        <img src='/Photo/api1.PNG'>
+                    </div>
+                    <div>
+                        <img src='/Photo/api2.PNG'>
+                    </div>
+                    <div>
+                        <img src='/Photo/api3.PNG'>
+                    </div>
+                    <div>
+                        <img src='/Photo/api4.PNG'>
+                    </div>
+                </div>
+            </div>
+            <div class='right'>
+                <h2>RESTful API</h2>
+                <p>The RESTful API was created by Node.js, Express and connected to the database.<br><br>
+                    The API responded with HTTP request and response data to the client, which provide a connection between the dataset and the forum app.<br><br>
+                </p>
+            </div>
+        </div>
+        </section>
+        <section class='forum'>
+        <div class='content'>
+            <div class='left'>
+                <div id='forumslideshow' class='slideshow'>
+                    <div>
+                        <img src='/Photo/forum001.PNG'>
+                    </div>
+                    <div>
+                        <img src='/Photo/forum5.PNG'>
+                    </div>
+                    <div>
+                        <img src='/Photo/forum002.PNG'>
+                    </div>
+                    <div>
+                        <img src='/Photo/forum6.PNG'>
+                    </div>
+                    <div>
+                        <img src='/Photo/forum7.PNG'>
+                    </div>
+                    <div>
+                        <img src='/Photo/forum8.PNG'>
+                    </div>
+                </div>
+            </div>
+            <div class='right'>
+                <h2>Fourm</h2>
+                <p>I have create a Forum app using React.js. It provides a user interface for the client to create 
+                    an account login, post posts, comments, uploading photos and more.<br><br>
+                    I used Promise and ajax for update data behind the scenes. 
+                    Moreover, I have practised my skills on Rejac.js, and be familiar with react lifecycle.
+                </p>
+            </div>
+        </div>
+        </section>
+        <section class='dentist'>
+        <div class=content>
+            <div class='left'>
+                <div id='dentistslideshow' class='slideshow'>
+                    <div>
+                        <img src='/Photo/d2.PNG'>
+                    </div>
+                    <div>
+                        <img src='/Photo/d3.PNG'>
+                    </div>
+                    <div>
+                        <img src='/Photo/d5.PNG'>
+                    </div>
+                    <div>
+                        <img src='/Photo/d6.PNG'>
+                    </div>
+                    <div>
+                        <img src='/Photo/d7.PNG'>
+                    </div>
+                </div>
+            </div>
+            <div class='right'>
+                <h2>C# Dentist form app</h2><br>
+                <p>I have created a Window Form applications for a dentist clinic. It supports appointment for clients, calculates frees, records treatment reports and follows ups.<br><br>
+                    The app is connected with a database, which I have created on MySQL.
+                </p>
+            </div>
+        </div>
+        </section>
+    </body>
+    <noscript>Please enable javascript</noscript>
+    <script>
+        $(document).ready(function(){
+            $("#apislideshow > div:gt(0)").hide();
+            
+            setInterval(function() { 
+                $('#apislideshow > div:first')
+                .fadeOut(0)
+                .next()
+                .fadeIn(0)
+                .end()
+                .appendTo('#apislideshow');
+                },  4000);
+        });
+        $(document).ready(function(){
+            $("#dentistslideshow > div:gt(0)").hide();
+            
+            setInterval(function() { 
+                $('#dentistslideshow > div:first')
+                .fadeOut(0)
+                .next()
+                .fadeIn(0)
+                .end()
+                .appendTo('#dentistslideshow');
+                },  4000);
+        });
+        $(document).ready(function(){
+            $("#forumslideshow > div:gt(0)").hide();
+            
+            setInterval(function() { 
+                $('#forumslideshow > div:first')
+                .fadeOut(0)
+                .next()
+                .fadeIn(0)
+                .end()
+                .appendTo('#forumslideshow');
+                },  4000);
+        });
+    </script>
+    <footer>
+        <div><p>© 2020 Ryan Leung.  All rights reserved. </p></div>
+    </footer>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ryan Leung</title>
+        <meta charset="UTF-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+    </head>
+    <body>
+        <div class='pagewrapper'>
+        <div class="startPage" id="startPage">
+            <div class="startPageContent">
+                    <div class="welcome">
+                        <p class="hello">Hello</p>
+                        <p class="ryan" >I am Ryan</p>
+                        <a class='viewMore' id="viewMore" href="#">View more ></a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='content' id='mainSection'>
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+                <div class= 'container-fluid'>
+                    <a class="navbar-brand" href="#mainSection">Ryan</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        </ul>
+                        <ul class="navbar-nav mr-right my-2 my-lg-0">
+                            <li class="nav-item ">
+                            <a class="nav-link" id='toAboutMe' href="#aboutMe" data-toggle="collapse" data-target=".navbar-collapse.show">About Me</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" id='toProject' href="#project" data-toggle="collapse" data-target=".navbar-collapse.show">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link"  id='toContact' href="#contact" data-toggle="collapse" data-target=".navbar-collapse.show">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        <div class='contentWrapper' id="mainSection">
+            <section  class='aboutMe' id='aboutMe'>
+                <div class=content>
+                <div class='leftContent'>
+                    <div class='aboutMeImage'>
+                    </div>
+                </div>
+                <div class='rightContent'>
+                    <h2>About me</h2><br>
+                    <p>Hi! I'm Ryan, a computer science graduate from the University of Canterbury. I am interested in web development, and I am familiar with front-end frameworks like Vue, React, and back-end tools such as Node, express.<br><br>
+                        On the other hand, I familiar with C#, I have created a few WFP applications on visual studio. I have learnt ASP.Net in my spare time, and I am going to build some websites using ASP.Net in the future.
+                        <br><br>If you like to know more about my projects, please scroll down to the projects section.</p>
+                </div>
+                </div>
+            </section>
+            <section class='project' id='project'>
+                <div class=content>
+                <div class='leftContent'>
+                    <div class='slideshow' id='slideshow'>
+                        <div>
+                            <img src='/Photo/slide1.PNG'>
+                        </div>
+                        <div>
+                            <img src='/Photo/slide2.PNG'>
+                        </div>
+                        <div>
+                            <img src='/Photo/forum001.PNG'>
+                        </div>
+                    </div>
+                </div>
+                <div class='rightContent'>
+                    <h2>Projects</h2><br>
+                    <p>During my study at the university, I have participated with web, java, python and c# application developments. To enhance my skill, I am continuously learning new technics. I have created some websites/applications in my spare time.
+                        I love to explore the innovation on the market, and I am willing to try new tools.<br><br>
+                        The slide show on the left is some highlight of my projects. If you want to know some details about my projects, please click the button below. 
+                    </p>
+                    <div class=viewProject>
+                        <a href="project.html" class="btn btn-primary btn-active" role="button" aria-pressed="true">View Projects</a>
+                    </div>
+                </div>
+            </div>
+            </section>
+            <section class= skill id='skills'>
+                <div class=content>
+                <div class='skillTopic'><h1>Experienced with :</h1></div>
+                <div class='imageBox'>
+                    <img  class='css' src='/Photo/css.png'>
+                    <img  class='vue' src='/Photo/vue.png'>
+                    <img class='react' src='/Photo/react.png'>
+                    <img class='node' src='/Photo/node.png'>
+                    <img class='csharp' src='/Photo/csharp.png'>
+                </div>
+                </div>
+            </section>
+            <section id='contact' class=contact>
+                <div class=content>
+                <div class='contactSlogin'><h1>CONTACT</h1><hr style='width:120px; background-color: #242532; margin:0 auto; height:5px; border:0px; border-radius: 3px;'><br><br>If you have any questions,  please send me an direct message</div><br>
+                <a id="send-mail" class="btn btn-primary btn-active" href="mailto:ryanleung7777@gmail.com"><i class="fa fa-envelope" style='margin-right:10px'></i>Get In Touch</a>
+                </div>
+            </section>
+        </div>
+        </div>
+     </body>
+     <noscript>Please enable javascript</noscript>
+     <script>
+        $(document).ready(function(){
+            $("#viewMore").click(function(){
+                $("body,html").animate({
+                scrollTop: $("#mainSection").offset().top
+                },
+                1000
+             );
+            });
+            var aboutMe = 0;
+            var project = 0;
+            var contact = 0;
+            if(window.matchMedia("(max-width: 736px) and (orientation:landscape)").matches){
+                aboutMe = 200
+                project = 195
+                contact = 190
+                
+            }else if (window.matchMedia("(max-width: 736px) and (orientation:portrait)").matches){
+                aboutMe = 170
+                project = 180
+                contact = 180
+            }else{
+                aboutMe= project = contact = 40
+            }
+            $( window ).on( "orientationchange", function( event ) {
+                if(window.matchMedia("(max-width: 736px) and (orientation:landscape)").matches){
+                aboutMe = 200
+                project = 195
+                contact = 190
+                
+            }else if (window.matchMedia("(max-width: 736px) and (orientation:portrait)").matches){
+                aboutMe = 170
+                project = 180
+                contact = 180
+            }
+            });
+            console.log(aboutMe);
+            $("#toAboutMe").click(function(){
+                $("body,html").animate({
+                scrollTop: $("#aboutMe").offset().top - aboutMe
+                },
+                500
+             );
+            });
+            $("#toProject").click(function(){
+                $("body,html").animate({
+                scrollTop: $("#project").offset().top - project
+                },
+                500
+             );
+            });
+            $("#toContact").click(function(){
+                $("body,html").animate({
+                scrollTop: $("#contact").offset().top - contact
+                },
+                500
+             );
+            });
+            
+            $("#slideshow > div:gt(0)").hide();
+            
+            setInterval(function() { 
+                $('#slideshow > div:first')
+                .fadeOut(0)
+                .next()
+                .fadeIn(0)
+                .end()
+                .appendTo('#slideshow');
+                },  4000);
+        });
+     </script>
+     <footer>
+         <div><p>© 2020 Ryan Leung.  All rights reserved. </p></div>
+     </footer>
+ </html>

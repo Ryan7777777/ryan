@@ -1,0 +1,480 @@
+html, body{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color:white;
+}
+h2{
+    font-size: 2.4em;
+}
+p{
+    font-size: 1.3em;
+    padding: 20px 0px;
+}
+div{
+    display: block
+}
+.startPage{
+    background-color:black;
+    height:100vh;
+    padding-top:30px;
+}
+.startPage .startPageContent{
+    margin: auto;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(170, 170, 170, 0.5)), url("/Photo/GIGX3798.JPG"); 
+    background-size:cover;
+    height:95%;
+    width: 1400px;
+    background-position: bottom;
+    border-radius: 2px;
+}
+.startPage .startPageContent .welcome{
+    color: white;
+    z-index: 1;
+    text-align: center;
+    font-family:sans-serif;
+    height:calc(100% - 80px);
+    overflow-y: hidden;
+}
+.startPage .startPageContent .welcome .hello{
+    font-size:90px;
+    margin-bottom: -35px;
+}
+.startPage .startPageContent .welcome .ryan{
+    font-size: 55px;
+    margin-bottom: -10px;
+}
+.startPage .startPageContent .welcome a{
+    font-size: 2em;
+    margin-top: 10px;
+    font-weight: 750;
+    color: #6e7cff;
+}
+.content nav .container-fluid{
+    margin: auto;
+    width: 1410px;
+}
+.content nav .container-fluid .navbar-brand{
+    font-size: 30px;
+    font-weight: 600;
+}
+.contant nav .container-fluid .nav-link{
+    font-size: 1.3em;
+}
+section{
+    overflow-x: hidden;
+    padding-top: 0px;
+    overflow-y: hidden;
+}
+section .content{
+    max-width: 1410px;
+    margin: auto;
+}
+.leftContent{
+    width: 500px;
+    float: left;
+    box-sizing: border-box;
+}
+.rightContent{
+    position: relative;
+    margin-left:500px;
+    height: 400px;
+    width: 700px;
+}
+.aboutMe{
+    padding: 50px 25px;
+    background-color: #fafaff;
+}
+.aboutMe  .leftContent .aboutMeImage{
+    width: 450px;
+    height: 400px;
+    background-image: url('/Photo/IMG_0172.jpg');
+    background-size:cover;
+    border: #aaaaaa solid 4px;
+    border-radius: 7px;
+    background-position: 0% 20%;
+}
+.content .contentWrapper .leftContent .slideshow img { 
+    margin: auto;
+    object-fit: contain; 
+    width: 444px; 
+    height: 250px; 
+    margin-top: 70px;
+}
+.content .contentWrapper .leftContent .slideshow {
+    width: 450px; 
+    height: 400px; 
+    background-color: #e5e5e5;
+    border: 3px solid gray;
+    border-radius: 3px;
+}
+.project{
+    padding: 50px 25px;
+    background-color:white;
+}
+.project .rightContent .viewProject{
+    position: absolute;
+    bottom:0px;
+}
+.skill{
+    background-color: #fafaff;
+    padding: 80px 25px;
+}
+.skill .skillTopic{
+    text-align: center;
+    padding-bottom: 70px;
+}
+.skill .content .imageBox{
+    width: 1410px;
+}
+.css{
+    margin-left: 80px;
+    width:130px;
+}
+.vue{
+    margin-left: 100px;
+    width: 160px;
+}
+.react{
+    margin-left: 70px;
+    width: 185px;
+}
+.node{
+    margin-left: 90px;
+    width: 200px;
+}
+.csharp{
+    margin-left: 110px;
+    width:170px;
+}
+.contact{
+    height:300px;
+    background-color: fafaff;
+}
+.contact .content{
+    padding:70px 0px;
+    text-align: center;
+}
+footer{
+    background-color: #101111;
+    height: 100px;
+    width:100%;
+}
+footer div p{
+    color: #aaaaaa;
+    padding-top: 35px;
+    text-align: center;
+    font-size: 1em;
+}
+@media only screen and (max-width: 1366px){
+    .startPage{
+        padding-top:0px;
+        height: 100vh;
+    }
+    .startPage .startPageContent{
+        height: 100%;
+        width: 100%;
+        background-position: bottom;
+        border-radius: 2px;
+    }
+     .welcome{
+        padding-top: 20px;
+        color: white;
+        z-index: 1;
+        text-align: center;
+        font-family:sans-serif; 
+    }
+    .startPage .startPageContent .welcome .hello{
+        margin: 0;
+        padding: 0;
+    }
+    .startPage .startPageContent .welcome .hello{
+        margin-top: 0px;
+        padding: 0;
+    }
+    .startPage .startPageContent .welcome .ryan{
+        padding: 0;
+        margin-top: -10px;
+    }
+    .startPage .startPageContent .welcome a{
+        font-size: 2em;
+    }
+    .contantWrapper{
+        width: 100%;
+    }
+    .css{
+        margin-left: 80px;
+    }
+}
+@media only screen and (max-width: 1024px){
+    /*skill logos for ipad pro protrait and ipad landscape*/
+    .css{
+        margin-left: 10px;
+    }
+    .vue{
+        margin-left: 40px;
+        width: 160px;
+    }
+    .react{
+        margin-left: 0px;
+        width: 185px;
+    }
+    .node{
+        margin-left: 20px;
+        width: 200px;
+    }
+    .csharp{
+        margin-left: 30px;
+        width:170px;
+    }
+}
+
+@media only screen and (max-width: 768px) and (orientation:portrait){
+    p{
+        font-size: 1.1em;
+    }
+    .welcome{
+        padding-top: 20px;
+    }
+    .startPage .startPageContent .welcome .hello{
+        font-size: 6em;
+    }
+    .startPage .startPageContent .welcome .ryan{
+        font-size: 4em;
+        margin-bottom: 0px;
+    }
+    .startPage .startPageContent .welcome a{
+        font-size: 2em;
+    }
+    .contentWrapper{
+        max-width: 768px;
+    }
+    section{
+
+        margin: 0;
+    }
+    .aboutMe{
+       margin: 0px;
+       padding:50px 0px;
+    }
+    .project{
+        padding: 50px 0px;
+    }
+    .leftContent{
+        width:100%;
+        float: none;
+    }
+    .rightContent{
+        margin: auto;
+        width:90%;
+        float: none;
+        margin-top:20px;
+        height: 100%;
+    }
+    .rightContent h2{
+        text-align: center;
+    }
+    .aboutMe .leftContent .aboutMeImage{
+        margin: auto;
+        width: 100%;
+        height: 300px;
+        border: 0px;
+        border-radius: 0px;
+    }
+    .content .contentWrapper .leftContent .slideshow div img { 
+        height: 100%;
+        object-fit: contain; 
+        width: 100%; 
+        padding: 0px; 
+        margin-top: 0px;
+        box-shadow: 0 0 0px rgba(0,0,0,0.4); 
+    }
+    .content .contentWrapper .leftContent .slideshow {
+        height: 100%;
+        border: 0px solid gray;
+        border-radius: 0px;
+    }
+    .project .rightContent .viewProject{
+        position: relative;
+        padding-top: 20px;
+        text-align: center;
+    }
+    .skill{
+        display: none;
+    }
+    .contact .content{
+        padding:70px 40px;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 768px) and (min-height: 1024px) and (orientation:portrait){
+    /*ipad*/
+    p{
+        font-size: 1.em;
+    }
+    .aboutMe .leftContent .aboutMeImage{
+        margin: auto;
+        width: 100%;
+        height: 400px;
+        background-position: 0px -80px;
+        border: 0px;
+        border-radius: 0px;
+    }
+    .content .contentWrapper .leftContent .slideshow { 
+        height: 400px;
+        object-fit: contain; 
+        width: 100%;
+        padding: 0px; 
+        margin-top: 0px;
+        box-shadow: 0 0 0px rgba(0,0,0,0.4); 
+    }
+    .css{
+        margin-left: 10px;
+        width:90px;
+    }
+    .vue{
+        margin-left: 40px;
+        width: 120px;
+    }
+    .react{
+        margin-left: 10px;
+        width: 125px;
+    }
+    .node{
+        margin-left: 20px;
+        width: 140px;
+    }
+    .csharp{
+        margin-left: 30px;
+        width:110px;
+    }
+    
+} 
+@media only screen  and (max-width: 823px) and (orientation:landscape){
+    p{
+        font-size: 1.45em;
+    }
+     .welcome{
+        padding: 0px;
+        margin: 0px;
+    }
+    .startPage .startPageContent .welcome .hello{
+        font-size: 6em;
+        margin-top: -20px;
+        margin-bottom: -50px;
+    }
+    .startPage .startPageContent .welcome .ryan{
+        font-size: 4em;
+        margin: 5px;
+        margin-bottom: -20px;
+    }
+    .startPage .startPageContent .welcome a{
+        font-size: 2em;
+    }
+    .contantWrapper{
+        max-width: 823px;
+    }
+    .content .contentWrapper{
+        width: 100%;
+        padding: 0px 0px;
+        margin-top: 0px;
+    }
+    section{
+        padding-top: 0px;
+        margin: 0;
+    }
+    .leftContent{
+        width:100%;
+        float: none;
+    }
+    .rightContent{
+        margin: auto;
+        width:90%;
+        float: none;
+        padding-top:20px;
+        height: 100%;
+    }
+    .rightContent h2{
+        text-align: center;
+    }
+    .aboutMe .leftContent .aboutMeImage{
+        margin: auto;
+        width: 100%;
+        height:300px;
+        background-position: 0px -170px;
+        border: 0px;
+        border-radius: 0px;
+    }
+    .content .contentWrapper .leftContent .slideshow {
+        width: 100%;
+        height:100% ;
+        border: 0px;
+        border-radius: 0px;
+        margin-top: 10px;
+    }
+    .content .contentWrapper .leftContent .slideshow img { 
+        object-fit: contain; 
+        height:100% ;
+        width: 100%; 
+        padding: 0px; 
+        margin-top: 0px;
+        box-shadow: 0 0 0px rgba(0,0,0,0.4); 
+    }
+    .project .rightContent .viewProject{
+        position: relative;
+        padding-top: 20px;
+        text-align: center;
+    }
+    .skill{
+        display: none;
+    }
+}
+@media only screen and (max-width: 360px) and (orientation:portrait){
+    .welcome{
+        padding-top: 40px;
+    }
+    .startPage .startPageContent .welcome .hello{
+        margin-top: -20px;
+        margin-bottom: -30px;
+        font-size: 5em;
+    }
+    .startPage .startPageContent .welcome .ryan{
+        font-size: 3.5em;
+        margin-bottom: -5px;
+    }
+    .startPage .startPageContent .welcome a{
+        font-size: 1.8em;
+    }
+    .contantWrapper{
+        max-width: 360px;
+    }
+    .rightContent{
+        height: 100%;
+    }
+    .aboutMe .leftContent .aboutMeImage{
+        margin: auto;
+        width: 100%;
+        height: 80vh;
+        background-position: 0px 0px;
+        border: 0px;
+        border-radius: 0px;
+    }
+}
+@media only screen and (max-width: 568px) and (orientation:landscape){
+    .aboutMe .leftContent .aboutMeImage{
+        margin: auto;
+        width: 100%;
+        height: 80vh;
+        background-position: 0px -70px;
+        border: 0px;
+        border-radius: 0px;
+    }
+    .content .contentWrapper .leftContent .slideshow {
+        width: 100%;
+        height:100% ;
+        border: 0px;
+        border-radius: 0px;
+        margin-top: 8.5px;
+    }
+}
