@@ -89,7 +89,7 @@ section .content{
 .aboutMe  .leftContent .aboutMeImage{
     width: 450px;
     height: 400px;
-    background-image: url('/Photo/IMG_0172.jpg');
+    background-image: url('./Photo/IMG_0172.jpg');
     background-size:cover;
     border: #aaaaaa solid 4px;
     border-radius: 7px;
