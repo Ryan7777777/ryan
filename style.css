@@ -298,6 +298,7 @@ footer div p{
         box-shadow: 0 0 0px rgba(0,0,0,0.4); 
     }
     .content .contentWrapper .leftContent .slideshow {
+        width: 100%; 
         height: 100%;
         border: 0px solid gray;
         border-radius: 0px;
