@@ -4,7 +4,6 @@ html, body{
 }
 body{
     background-color:white;
-    overflow-x: scroll;
 }
 h2{
     font-size: 2.4em;
@@ -63,15 +62,14 @@ div{
 .contant nav .container-fluid .nav-link{
     font-size: 1.3em;
 }
+.contentWrapper{
+    overflow-x: scroll;
+}
 section{
     margin: auto;
     padding-top: 0px;
-    width: 1450px;
-    overflow-y: hidden;
-}
-section .content{
-    width: 1410px;
-    margin: auto;
+    max-width: 1450px;
+    overflow: hidden;
 }
 .leftContent{
     width: 500px;
@@ -122,38 +120,21 @@ section .content{
 .skill{
     background-color: #fafaff;
     padding: 80px 25px;
+    height: 400px;
 }
 .skill .skillTopic{
     text-align: center;
-    padding-bottom: 70px;
+    padding-bottom: 20px;
 }
-.skill .content .imageBox{
-    width: 1410px;
+.skill .imageBox{
+    width:100%;
 }
-.css{
-    margin-left: 80px;
-    width:130px;
+.skill img{
+    display: block;
+    margin: auto;
+    height: 200px;
 }
-.vue{
-    margin-left: 100px;
-    width: 160px;
-}
-.react{
-    margin-left: 70px;
-    width: 185px;
-}
-.node{
-    margin-left: 90px;
-    width: 200px;
-}
-.csharp{
-    margin-left: 110px;
-    width:170px;
-}
-.contact{
-    height:300px;
-    background-color: fafaff;
-}
+
 .contact .content{
     padding:70px 0px;
     text-align: center;
@@ -211,30 +192,51 @@ footer div p{
 }
 @media only screen and (max-width: 1024px){
     /*skill logos for ipad pro protrait and ipad landscape*/
-    body{
-        overflow-x: hidden;
+    .aboutMe  .leftContent .aboutMeImage{
+        width: 380px;
+        height: 400px;
+        background-image: url('./Photo/IMG_0172.jpg');
+        background-size:cover;
+        border: #aaaaaa solid 4px;
+        border-radius: 7px;
+        background-position: 0% 20%;
     }
-    .css{
-        margin-left: 10px;
+    .content .contentWrapper .leftContent .slideshow img { 
+        margin: auto;
+        object-fit: contain; 
+        width: 374px; 
+        height: 250px; 
+        margin-top: 70px;
     }
-    .vue{
-        margin-left: 40px;
-        width: 160px;
+    .content .contentWrapper .leftContent .slideshow {
+        width: 380px; 
+        height: 400px; 
+        background-color: #e5e5e5;
+        border: 3px solid gray;
+        border-radius: 3px;
     }
-    .react{
-        margin-left: 0px;
-        width: 185px;
+    .leftContent{
+        width: 380px;
+        float: left;
+        box-sizing: border-box;
     }
-    .node{
-        margin-left: 20px;
-        width: 200px;
+    .rightContent{
+        position: relative;
+        margin-left:400px;
+        height: 400px;
+        width: 550px;
     }
-    .csharp{
-        margin-left: 30px;
-        width:170px;
+    .skill img{
+        display: block;
+        margin: auto;
+        height: 160px;
+    }
+    
+    .contact .content{
+        padding:70px 0px;
+        text-align: center;
     }
 }
-
 @media only screen and (max-width: 768px) and (orientation:portrait){
     p{
         font-size: 1.1em;
@@ -304,14 +306,24 @@ footer div p{
         position: relative;
         padding-top: 20px;
         text-align: center;
-    }
-    .skill{
-        display: none;
-    }
+    }   
     .contact .content{
         padding:70px 40px;
         text-align: center;
     }
+    .skill{
+        background-color: #fafaff;
+        padding: 80px 25px;
+        height: 300px;
+    }
+    .skill .skillTopic{
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .skill img{
+        height: 60px;
+    }
+    
 }
 @media only screen and (max-width: 768px) and (min-height: 1024px) and (orientation:portrait){
     /*ipad*/
@@ -353,6 +365,12 @@ footer div p{
     .csharp{
         margin-left: 30px;
         width:110px;
+    }
+    .skill{
+        height: 200px;
+    }
+    .skill img{
+        height: 120px;
     }
     
 } 
@@ -431,9 +449,11 @@ footer div p{
         padding-top: 20px;
         text-align: center;
     }
-    .skill{
-        display: none;
+
+    .skill img{
+        height: 110px;
     }
+   
 }
 @media only screen and (max-width: 360px) and (orientation:portrait){
     .welcome{
@@ -465,6 +485,9 @@ footer div p{
         border: 0px;
         border-radius: 0px;
     }
+    .skill img{
+        height: 50px;
+    }
 }
 @media only screen and (max-width: 568px) and (orientation:landscape){
     .aboutMe .leftContent .aboutMeImage{
@@ -481,5 +504,8 @@ footer div p{
         border: 0px;
         border-radius: 0px;
         margin-top: 8.5px;
+    }
+    .skill img{
+        height: 80px;
     }
 }
