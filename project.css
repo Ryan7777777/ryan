@@ -32,18 +32,44 @@ section .content{
     width:700px;
     margin-left:550px;
 }
-.slideshow img {
-    margin: auto;
-    object-fit: contain; 
-    width: 100%; 
-    height: 100%; 
-}
-.slideshow {
+#apislideshow {
     width: 480px; 
     height: 261px; 
     background-color: #e5e5e5;
     border: 3px solid gray;
     border-radius: 3px;
+}
+#apislideshow > div{
+    position: absolute;
+}
+#apislideshow > div > img {
+    width: 473px; 
+}
+#dentistslideshow {
+    width: 480px; 
+    height: 261px; 
+    background-color: #e5e5e5;
+    border: 3px solid gray;
+    border-radius: 3px;
+}
+#dentistslideshow > div{
+    position: absolute;
+}
+#dentistslideshow > div > img {
+    width: 473px; 
+}
+#forumslideshow {
+    width: 480px; 
+    height: 261px; 
+    background-color: #e5e5e5;
+    border: 3px solid gray;
+    border-radius: 3px;
+}
+#forumslideshow > div{
+    position: absolute;
+}
+#forumslideshow > div > img {
+    width: 473px; 
 }
 footer{
     background-color: #101111;
@@ -68,20 +94,6 @@ footer div p{
         height: 100%;
         float: none;
     }
-    .slideshow img {
-        margin: auto;
-        object-fit: contain; 
-        width: 100%; 
-        height: 100%; 
-    }
-    .slideshow {
-        margin: auto;
-        width: 90%; 
-        height: 100%; 
-        background-color: #e5e5e5;
-        border: 3px solid gray;
-        border-radius: 3px;
-    }
     .content .right{
         margin: auto;
         width:100%;
@@ -94,28 +106,46 @@ footer div p{
     
 }
 @media only screen and (max-width:812px) and (orientation:landscape) {
-    .slideshow {
-        height: 378px;
-        background-color: white;
-        border: 0px  
+    .left div{
+        margin: auto;
     }
 } 
 @media only screen and (max-width:600px) and (orientation:portrait) {
     section{
         height:100%;
     }
-    .slideshow {
+    .left div{
         width: 100%; 
-        height: 100%; 
-    }
-    .left{
-        width:100%;
-        float: none;
-        margin: 0;
+        height: 10%; 
     }
     .content .right{
         margin: auto;
         width: 90%;
         padding: 20px 0px;
+        text-align: center;
+    }
+    #apislideshow {
+       background-color: white;
+       height: 200px;
+       border: #aaaaaa solid 0px;
+    }
+    #apislideshow > div > img {
+        width: 100%; 
+    }
+    #forumslideshow {
+        background-color: white;
+        height: 200px;
+        border: #aaaaaa solid 0px;
+     }
+    #forumslideshow > div > img  {
+        width: 100%; 
+    }
+    #dentistslideshow {
+        background-color: white;
+        height: 200px;
+        border: #aaaaaa solid 0px;
+     }
+    #dentistslideshow > div > img {
+        width: 100%;
     }
 }

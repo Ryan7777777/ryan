@@ -15,79 +15,58 @@ p{
 div{
     display: block
 }
-.startPage{
-    background-color:black;
-    height:100vh;
-    padding-top:30px;
-}
-.startPage .startPageContent{
+.startPageContent{
+    height:93vh;
     margin: auto;
+    margin-top: -1px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(170, 170, 170, 0.5)), url("./Photo/GIGX3798.JPG"); 
     background-size:cover;
-    height:95%;
-    width: 1400px;
     background-position: bottom;
-    border-radius: 2px;
 }
-.startPage .startPageContent .welcome{
-    color: white;
+ .startPageContent .welcome{
     z-index: 1;
     text-align: center;
-    font-family:sans-serif;
-    height:calc(100% - 80px);
-    overflow-y: hidden;
+    font-family:Arial;
+    color: #eeeeee;
 }
-.startPage .startPageContent .welcome .hello{
-    font-size:90px;
-    margin-bottom: -35px;
+.welcome .hello{
+    font-size:100px;
+    padding: 0px;
+    margin:0;
 }
-.startPage .startPageContent .welcome .ryan{
-    font-size: 55px;
-    margin-bottom: -10px;
-}
-.startPage .startPageContent .welcome a{
-    font-size: 2em;
-    margin-top: 10px;
-    font-weight: 750;
-    color: #6e7cff;
+.welcome .ryan{
+    font-size: 60px;
+    padding: 0px;
+    margin-top: -25px;
 }
 .content nav .container-fluid{
     margin: auto;
-    width: 1410px;
-}
-.content nav .container-fluid .navbar-brand{
-    font-size: 30px;
-    font-weight: 600;
 }
 .contant nav .container-fluid .nav-link{
     font-size: 1.3em;
 }
-.contentWrapper{
-    overflow-x: scroll;
-}
 section{
+    max-width: 1450px;
     margin: auto;
     padding-top: 0px;
-    max-width: 1450px;
-    overflow: hidden;
 }
 .leftContent{
     width: 500px;
     float: left;
+    padding-left: 30px;
     box-sizing: border-box;
 }
 .rightContent{
     position: relative;
-    margin-left:500px;
+    margin-left:550px;
     height: 400px;
-    width: 700px;
 }
 .aboutMe{
     padding: 50px 25px;
     background-color: #fafaff;
 }
 .aboutMe  .leftContent .aboutMeImage{
-    width: 450px;
+    max-width: 450px;
     height: 400px;
     background-image: url('./Photo/IMG_0172.jpg');
     background-size:cover;
@@ -95,19 +74,21 @@ section{
     border-radius: 7px;
     background-position: 0% 20%;
 }
-.content .contentWrapper .leftContent .slideshow img { 
-    margin: auto;
-    object-fit: contain; 
-    width: 444px; 
-    height: 250px; 
-    margin-top: 70px;
-}
-.content .contentWrapper .leftContent .slideshow {
+
+.contentWrapper .leftContent #slideshow {
     width: 450px; 
     height: 400px; 
     background-color: #e5e5e5;
     border: 3px solid gray;
     border-radius: 3px;
+}
+.contentWrapper .leftContent #slideshow > div { 
+   position: absolute;
+}
+#slideshow > div > img{
+    position: absolute;
+    padding-top: 75px;
+    width:445px;
 }
 .project{
     padding: 50px 25px;
@@ -151,49 +132,28 @@ footer div p{
     font-size: 1em;
 }
 @media only screen and (max-width: 1366px){
-    .startPage{
-        padding-top:0px;
-        height: 100vh;
-    }
-    .startPage .startPageContent{
-        height: 100%;
-        width: 100%;
-        background-position: bottom;
-        border-radius: 2px;
-    }
-     .welcome{
-        padding-top: 20px;
-        color: white;
-        z-index: 1;
-        text-align: center;
-        font-family:sans-serif; 
-    }
-    .startPage .startPageContent .welcome .hello{
-        margin: 0;
-        padding: 0;
-    }
-    .startPage .startPageContent .welcome .hello{
-        margin-top: 0px;
-        padding: 0;
-    }
-    .startPage .startPageContent .welcome .ryan{
-        padding: 0;
-        margin-top: -10px;
-    }
-    .startPage .startPageContent .welcome a{
-        font-size: 2em;
-    }
     .contantWrapper{
         width: 100%;
     }
-    .css{
-        margin-left: 80px;
+    .startPageContent{
+        height: 97vh;
     }
+    .rightContent{
+    position: relative;
+    margin-left:525px;
+    height: 400px;
+}
 }
 @media only screen and (max-width: 1024px){
     /*skill logos for ipad pro protrait and ipad landscape*/
+    p{
+        font-size: 1.2em;
+    }
+    .startPageContent{
+        height: 95vh;
+    }
     .aboutMe  .leftContent .aboutMeImage{
-        width: 380px;
+        width: 400px;
         height: 400px;
         background-image: url('./Photo/IMG_0172.jpg');
         background-size:cover;
@@ -201,37 +161,34 @@ footer div p{
         border-radius: 7px;
         background-position: 0% 20%;
     }
-    .content .contentWrapper .leftContent .slideshow img { 
-        margin: auto;
-        object-fit: contain; 
-        width: 374px; 
-        height: 250px; 
-        margin-top: 70px;
-    }
-    .content .contentWrapper .leftContent .slideshow {
-        width: 380px; 
+    .project .content  .leftContent #slideshow {
+        width: 400px; 
         height: 400px; 
         background-color: #e5e5e5;
         border: 3px solid gray;
         border-radius: 3px;
     }
+    #slideshow > div > img{
+        position: absolute;
+        padding-top: 90px;
+        width:395px;
+    }
     .leftContent{
-        width: 380px;
+        width: 400px;
         float: left;
         box-sizing: border-box;
     }
     .rightContent{
         position: relative;
-        margin-left:400px;
+        margin-left:450px;
         height: 400px;
-        width: 550px;
+        width: 450px;
     }
     .skill img{
         display: block;
         margin: auto;
         height: 160px;
     }
-    
     .contact .content{
         padding:70px 0px;
         text-align: center;
@@ -258,7 +215,6 @@ footer div p{
         max-width: 768px;
     }
     section{
-
         margin: 0;
     }
     .aboutMe{
@@ -269,6 +225,7 @@ footer div p{
         padding: 50px 0px;
     }
     .leftContent{
+        padding: 0;
         width:100%;
         float: none;
     }
@@ -281,41 +238,26 @@ footer div p{
     }
     .rightContent h2{
         text-align: center;
-    }
-    .aboutMe .leftContent .aboutMeImage{
-        margin: auto;
+    }   
+    .project .content .leftContent #slideshow{ 
         width: 100%;
-        height: 300px;
-        border: 0px;
-        border-radius: 0px;
+        height: 220px;
     }
-    .content .contentWrapper .leftContent .slideshow div img { 
-        height: 100%;
-        object-fit: contain; 
-        width: 100%; 
-        padding: 0px; 
-        margin-top: 0px;
-        box-shadow: 0 0 0px rgba(0,0,0,0.4); 
-    }
-    .content .contentWrapper .leftContent .slideshow {
-        width: 100%; 
-        height: 100%;
-        border: 0px solid gray;
-        border-radius: 0px;
+     #slideshow > div > img{
+         padding-top:0px;
+         width:400px;
+     }
+    .project .rightContent p{
+        height:360px;
     }
     .project .rightContent .viewProject{
+        text-align: center;
         position: relative;
-        padding-top: 20px;
-        text-align: center;
-    }   
-    .contact .content{
-        padding:70px 40px;
-        text-align: center;
     }
     .skill{
         background-color: #fafaff;
-        padding: 80px 25px;
-        height: 300px;
+        padding: 60px 25px;
+        height: 250px;
     }
     .skill .skillTopic{
         text-align: center;
@@ -333,47 +275,33 @@ footer div p{
     }
     .aboutMe .leftContent .aboutMeImage{
         margin: auto;
+        max-width: 900px;
+        width: 900px;
+        background-position: 0% 90%;
+    }
+    .project .content .leftContent #slideshow{ 
         width: 100%;
-        height: 400px;
-        background-position: 0px -80px;
-        border: 0px;
-        border-radius: 0px;
+        height: 500px;
+       margin: auto;
     }
-    .content .contentWrapper .leftContent .slideshow { 
-        height: 400px;
-        object-fit: contain; 
-        width: 100%;
-        padding: 0px; 
-        margin-top: 0px;
-        box-shadow: 0 0 0px rgba(0,0,0,0.4); 
-    }
-    .css{
-        margin-left: 10px;
-        width:90px;
-    }
-    .vue{
-        margin-left: 40px;
-        width: 120px;
-    }
-    .react{
-        margin-left: 10px;
-        width: 125px;
-    }
-    .node{
-        margin-left: 20px;
-        width: 140px;
-    }
-    .csharp{
-        margin-left: 30px;
-        width:110px;
-    }
+     #slideshow > div > img{
+         position: absolute;
+         padding-top:0px;
+         width:920px;
+     }
+     .project .rightContent{
+         margin-top: 40px;
+         text-align: center;
+     }
+     .project .rightContent p{
+         height:260px;
+     }
     .skill{
         height: 200px;
     }
     .skill img{
         height: 120px;
     }
-    
 } 
 @media only screen  and (max-width: 823px) and (orientation:landscape){
     p{
@@ -383,21 +311,21 @@ footer div p{
         padding: 0px;
         margin: 0px;
     }
-    .startPage .startPageContent .welcome .hello{
+    .welcome .hello{
         font-size: 6em;
         margin-top: -20px;
         margin-bottom: -50px;
     }
-    .startPage .startPageContent .welcome .ryan{
+    .welcome .ryan{
         font-size: 4em;
         margin: 5px;
         margin-bottom: -20px;
     }
-    .startPage .startPageContent .welcome a{
-        font-size: 2em;
-    }
     .contantWrapper{
         max-width: 823px;
+    }
+    .aboutMe{
+        padding: 30px 0px;
     }
     .content .contentWrapper{
         width: 100%;
@@ -410,6 +338,7 @@ footer div p{
     }
     .leftContent{
         width:100%;
+        padding-left: 0px;
         float: none;
     }
     .rightContent{
@@ -424,27 +353,18 @@ footer div p{
     }
     .aboutMe .leftContent .aboutMeImage{
         margin: auto;
-        width: 100%;
-        height:300px;
-        background-position: 0px -170px;
-        border: 0px;
-        border-radius: 0px;
     }
-    .content .contentWrapper .leftContent .slideshow {
-        width: 100%;
-        height:100% ;
-        border: 0px;
-        border-radius: 0px;
-        margin-top: 10px;
+    .project{
+        padding: 20px 0px;
     }
-    .content .contentWrapper .leftContent .slideshow img { 
-        object-fit: contain; 
-        height:100% ;
-        width: 100%; 
-        padding: 0px; 
-        margin-top: 0px;
-        box-shadow: 0 0 0px rgba(0,0,0,0.4); 
+    .project .content .leftContent #slideshow{ 
+        height: 400px;
+       margin: auto;
     }
+     #slideshow > div > img{
+         position: absolute;
+         padding-top:90px;
+     }
     .project .rightContent .viewProject{
         position: relative;
         padding-top: 20px;

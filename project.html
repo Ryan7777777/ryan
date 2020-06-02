@@ -11,7 +11,7 @@
         <section class='api'>
         <div class='content'>
             <div class='left'>
-                <div id='apislideshow' class='slideshow'>
+                <div id='apislideshow'>
                     <div>
                         <img src='./Photo/api1.PNG'>
                     </div>
@@ -37,7 +37,7 @@
         <section class='forum'>
         <div class='content'>
             <div class='left'>
-                <div id='forumslideshow' class='slideshow'>
+                <div id='forumslideshow'>
                     <div>
                         <img src='./Photo/forum001.PNG'>
                     </div>
@@ -71,7 +71,7 @@
         <section class='dentist'>
         <div class=content>
             <div class='left'>
-                <div id='dentistslideshow' class='slideshow'>
+                <div id='dentistslideshow'>
                     <div>
                         <img src='./Photo/d2.PNG'>
                     </div>
@@ -105,9 +105,9 @@
             
             setInterval(function() { 
                 $('#apislideshow > div:first')
-                .fadeOut(0)
+                .fadeOut(1000)
                 .next()
-                .fadeIn(0)
+                .fadeIn(1000)
                 .end()
                 .appendTo('#apislideshow');
                 },  4000);
@@ -117,9 +117,9 @@
             
             setInterval(function() { 
                 $('#dentistslideshow > div:first')
-                .fadeOut(0)
+                .fadeOut(1000)
                 .next()
-                .fadeIn(0)
+                .fadeIn(1000)
                 .end()
                 .appendTo('#dentistslideshow');
                 },  4000);
@@ -129,9 +129,9 @@
             
             setInterval(function() { 
                 $('#forumslideshow > div:first')
-                .fadeOut(0)
+                .fadeOut(1000)
                 .next()
-                .fadeIn(0)
+                .fadeIn(1000)
                 .end()
                 .appendTo('#forumslideshow');
                 },  4000);

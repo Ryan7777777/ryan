@@ -13,42 +13,36 @@
         <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
     </head>
     <body>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+            <div class= 'container-fluid'>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    </ul>
+                    <ul class="navbar-nav mr-right my-2 my-lg-0">
+                        <li class="nav-item ">
+                        <a class="nav-link" id='toAboutMe' href="#aboutMe" data-toggle="collapse" data-target=".navbar-collapse.show">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" id='toProject' href="#project" data-toggle="collapse" data-target=".navbar-collapse.show">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link"  id='toContact' href="#contact" data-toggle="collapse" data-target=".navbar-collapse.show">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
         <div class='pagewrapper'>
-        <div class="startPage" id="startPage">
             <div class="startPageContent">
                     <div class="welcome">
                         <p class="hello">Hello</p>
                         <p class="ryan" >I am Ryan</p>
-                        <a class='viewMore' id="viewMore" href="#">View more ></a>
                     </div>
-                    </div>
-                </div>
             </div>
         </div>
-        <div class='content' id='mainSection'>
-            <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
-                <div class= 'container-fluid'>
-                    <a class="navbar-brand" href="#mainSection">Ryan</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                        </ul>
-                        <ul class="navbar-nav mr-right my-2 my-lg-0">
-                            <li class="nav-item ">
-                            <a class="nav-link" id='toAboutMe' href="#aboutMe" data-toggle="collapse" data-target=".navbar-collapse.show">About Me</a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link" id='toProject' href="#project" data-toggle="collapse" data-target=".navbar-collapse.show">Projects</a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link"  id='toContact' href="#contact" data-toggle="collapse" data-target=".navbar-collapse.show">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
         <div class='contentWrapper' id="mainSection">
             <section  class='aboutMe' id='aboutMe'>
                 <div class=content>
@@ -67,7 +61,7 @@
             <section class='project' id='project'>
                 <div class='content'>
                 <div class='leftContent'>
-                    <div class='slideshow' id='slideshow'>
+                    <div id='slideshow'>
                         <div>
                             <img src='./Photo/slide1.PNG'>
                         </div>
@@ -93,7 +87,7 @@
             </section>
             <section class= skill id='skills'>
                 <div class='content'>
-                <div class='skillTopic'><h1>Experienced with :</h1></div>
+                <div class='skillTopic'><h1>Skills :</h1></div>
                 <div class='imageBox'>
                     <img src ='./Photo/logo.PNG'>
                 </div>
@@ -106,18 +100,10 @@
                 </div>
             </section>
         </div>
-        </div>
      </body>
      <noscript>Please enable javascript</noscript>
      <script>
-        $(document).ready(function(){
-            $("#viewMore").click(function(){
-                $("body,html").animate({
-                scrollTop: $("#mainSection").offset().top
-                },
-                1000
-             );
-            });
+         $(document).ready(function(){
             var aboutMe = 0;
             var project = 0;
             var contact = 0;
@@ -127,11 +113,11 @@
                 contact = 190
                 
             }else if (window.matchMedia("(max-width: 736px) and (orientation:portrait)").matches){
-                aboutMe = 170
-                project = 180
-                contact = 180
+                aboutMe = 140
+                project = 140
+                contact = 0
             }else{
-                aboutMe= project = contact = 40
+                aboutMe= project = contact = 50
             }
             $( window ).on( "orientationchange", function( event ) {
                 if(window.matchMedia("(max-width: 736px) and (orientation:landscape)").matches){
@@ -140,9 +126,9 @@
                 contact = 190
                 
             }else if (window.matchMedia("(max-width: 736px) and (orientation:portrait)").matches){
-                aboutMe = 170
-                project = 180
-                contact = 180
+                aboutMe = 140
+                project = 140
+                contact = 0
             }
             });
             console.log(aboutMe);
@@ -168,16 +154,16 @@
              );
             });
             
-            $("#slideshow > div:gt(0)").hide();
-            
+            $("#slideshow > div").hide();    
+
             setInterval(function() { 
-                $('#slideshow > div:first')
-                .fadeOut(0)
+            $('#slideshow > div:first')
+                .fadeIn(1000)
                 .next()
-                .fadeIn(0)
+                .fadeOut(1000)
                 .end()
-                .appendTo('#slideshow');
-                },  4000);
+    .           appendTo('#slideshow');
+            },  3000);
         });
      </script>
      <footer>
